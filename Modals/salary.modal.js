@@ -9,8 +9,10 @@ const salarySchema = mongoose.Schema({
     deduction: {type: String},
     totalSalary: {type: String},
     status: {type: String, default: 'pending'},
-    remarks: [String]
-})
+    remarks: {type: String},
+    month: {type: String},
+    year: {type: String}
+},{ timestamps: true })
 
 const salary = mongoose.model("salary", salarySchema);
 

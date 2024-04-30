@@ -196,8 +196,7 @@ const {
 
 const singleStaff = async(req, res) =>{
     const {id} = req.params;
-
-
+        // console.log(id)
     try {
         const user = await staff.findOne({_id:id}).populate("personalDetails.department");
         if(user){
