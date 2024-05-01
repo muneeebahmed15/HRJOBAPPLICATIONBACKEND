@@ -1,4 +1,4 @@
-const leave = require("../Modals/leave.modal")
+const leave = require("../../Modals/StaffManagement/leave.modal")
 
 const leaveRequest = async (req, res) =>{
     // console.log(req.body)

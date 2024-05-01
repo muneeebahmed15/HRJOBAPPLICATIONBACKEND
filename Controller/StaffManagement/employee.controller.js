@@ -1,6 +1,6 @@
-const employee = require ("../Modals/Employee.Modals");
+const employee = require ("../../Modals/StaffManagement/Employee.Modals");
 const nodemailer = require ("nodemailer");
-const Interview = require("../Modals/Interview.Modals");
+const Interview = require("../../Modals/StaffManagement/Interview.Modals");
 
 
 const addEmployeeRecord = async(req, res)=>{

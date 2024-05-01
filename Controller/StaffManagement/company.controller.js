@@ -1,5 +1,5 @@
-const company = require("../Modals/company.modal");
-const staff = require('../Modals/staff.modal');
+const company = require("../../Modals/StaffManagement/company.modal");
+const staff = require('../../Modals/StaffManagement/staff.modal');
 const jwt = require("jsonwebtoken");
 const bcrypt = require("bcryptjs");
 

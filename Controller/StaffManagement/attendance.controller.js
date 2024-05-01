@@ -1,4 +1,4 @@
-const attendance = require("../Modals/attendance.modal");
+const attendance = require("../../Modals/StaffManagement/attendance.modal");
 
 const markAttendance = async(req, res) =>{
     const data = req.body;

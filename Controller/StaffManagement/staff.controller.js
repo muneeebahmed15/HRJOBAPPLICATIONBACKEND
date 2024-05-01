@@ -1,4 +1,4 @@
-const staff = require("../Modals/staff.modal");
+const staff = require("../../Modals/StaffManagement/staff.modal");
 const bcrypt = require("bcryptjs")
 
 const newStaff = async(req, res) =>{

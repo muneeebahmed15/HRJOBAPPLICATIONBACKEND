@@ -1,4 +1,4 @@
-const department = require("../Modals/department.modal")
+const department = require("../../Modals/StaffManagement/department.modal")
 
 const registerDepartment = async(req, res) =>{
     const {name, description} = req.body;

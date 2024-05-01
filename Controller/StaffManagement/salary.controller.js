@@ -1,4 +1,4 @@
-const salary = require("../Modals/salary.modal");
+const salary = require("../../Modals/StaffManagement/salary.modal");
 
 const enterSalaries = async (req, res) => {
     // const { empId, totalHours, bonus, deduction, overtimeHours, status, remarks } = req.body;
