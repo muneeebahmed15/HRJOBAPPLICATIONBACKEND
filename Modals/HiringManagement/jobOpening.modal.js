@@ -7,10 +7,11 @@ const jobSchema = mongoose.Schema({
     location: {type: String},
     jobStatus: {type: String},
     experience: {type: String},
-    description: {type: String}
+    description: {type: String},
+    applicants:[{type: mongoose.Schema.Types.ObjectId, ref: "candidate"}]
 },{
     timestamps: true
 })
 
-const job = mongoose.model("job", jobSchema);
+const job = mongoose.model("job", jobSchema)
 module.exports = job;

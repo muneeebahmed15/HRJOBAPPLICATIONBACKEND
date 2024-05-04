@@ -18,10 +18,10 @@ const createJob = async(req, res) =>{
 const updateJob = async(req, res) =>{
     const {id} = req.params;
     const data = req.body;
-    // console.log(data);
+    // console.log(id);
 
     try {
-        const response = await job.findOneAndUpdate({_id:id}, {$set: data}, {new: true})
+        const response = await job.findOneAndUpdate({_id:id.trim()}, {$set: data}, {new: true})
         if(response){
             res.status(200).json({status: true, response})
         }else{
