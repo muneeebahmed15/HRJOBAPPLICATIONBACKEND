@@ -48,6 +48,7 @@ const {
   allCandidates,
   singleCandidate,
   singleCandidateWithSpecificJob,
+  updateCandidateStatus,
 } = require("../Controller/HiringManagement/candidate.controller");
 const {
   sheduleInterview,
@@ -130,6 +131,8 @@ router.get("/all-candidates", allCandidates);
 router.get("/single-candidate/:id", singleCandidate);
 
 router.get("/candidates-with-job-id/:id", singleCandidateWithSpecificJob);
+
+router.post("/candidate-status", updateCandidateStatus);
 
 //interview
 router.post("/shedule-interview", sheduleInterview);

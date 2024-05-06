@@ -17,6 +17,7 @@ const candidateSchema = mongoose.Schema(
     workExperience: { type: String },
     technicalSkills: { type: String },
     interviewAvailability: { type: String },
+    status: { type: String, default: "Pending" },
   },
   {
     timestamps: true,
